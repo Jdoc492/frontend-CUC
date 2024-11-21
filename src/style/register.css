@@ -1,0 +1,152 @@
+/* Contenedor principal */
+.register-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 10px; /* Espacio entre las columnas */
+    max-height: 1000px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: -50px;
+  }
+  
+  /* Formulario */
+  .register-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem; /* Reduce el padding */
+    text-align: center;
+    width: 100%;
+    max-width: 350px; /* Tamaño máximo más pequeño */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+  }
+  
+  /* Encabezado del formulario */
+  .register-header img {
+    width: 100px; /* Imagen más pequeña */
+    margin-bottom: 1rem;
+  }
+  
+  .register-header h1 {
+    font-size: 20px; /* Reduce el tamaño del título */
+    font-weight: bold;
+    color: #d32f2f; /* Rojo de la universidad */
+    margin-bottom: 0.5rem;
+  }
+  
+  .register-header p {
+    font-size: 13px; /* Reduce el tamaño del subtítulo */
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  /* Formulario */
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* Espacio más pequeño entre los campos */
+  }
+  
+  .register-form label {
+    font-size: 13px; /* Reduce el tamaño del texto de los labels */
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+  }
+  
+  .register-form input {
+    padding: 0.6rem; /* Reduce el padding */
+    font-size: 13px; /* Reduce el tamaño de la fuente */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .register-form input:focus {
+    outline: none;
+    border-color: #d32f2f;
+    box-shadow: 0 0 5px rgba(211, 47, 47, 0.5);
+  }
+  
+  /* Botón de registro */
+  .btn-register {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 0.6rem; /* Reduce el padding */
+    font-size: 14px; /* Reduce el tamaño de la fuente */
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-register:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* Pie de página */
+  .register-footer {
+    margin-top: 1rem; /* Reduce el margen superior */
+    font-size: 13px; /* Reduce el tamaño del texto */
+    color: #555;
+  }
+  
+  .register-footer a {
+    color: #d32f2f;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .register-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Imagen */
+  .register-image {
+    background: url('../assets/img/graduation.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+  
+  /* Responsive para tablet */
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .register-container {
+      grid-template-columns: 1fr; /* Cambia a una sola columna */
+      height: auto; /* Ajusta la altura */
+    }
+  
+    .register-card {
+      max-width: 80%; /* Ajusta el ancho del formulario */
+      margin: 0 auto; /* Centra el formulario */
+    }
+  
+    .register-image {
+      display: block; /* Muestra la imagen */
+      margin: 20px auto; /* Espaciado adicional */
+      height: 300px; /* Ajusta la altura */
+      border-radius: 8px;
+    }
+  }
+  
+  /* Responsive para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .register-container {
+      grid-template-columns: 1fr; /* Una sola columna */
+      gap: 0;
+    }
+  
+    .register-image {
+      display: none; /* Oculta la imagen en pantallas pequeñas */
+    }
+  
+    .register-card {
+      max-width: 90%; /* Hace el formulario más ancho */
+      margin: 20px auto;
+    }
+  }
+  

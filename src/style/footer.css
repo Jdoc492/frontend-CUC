@@ -1,0 +1,24 @@
+.footer-container {
+    background-color: #660000; /* Color institucional */
+    color: #ffffff;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-logo .logo {
+    height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+  }
+  
+  .footer-text p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  

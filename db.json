@@ -1,0 +1,96 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Estudiar React",
+      "status": "Pendiente",
+      "resources": [
+        1,
+        2
+      ],
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "Hacer ejercicio",
+      "status": "En Progreso",
+      "resources": [
+        3
+      ],
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "title": "Comprar víveres",
+      "status": "Completada",
+      "resources": [],
+      "userId": 1
+    },
+    {
+      "id": "d360",
+      "title": "lavar ropa jose",
+      "status": "Pendiente",
+      "resources": [
+        3
+      ],
+      "userId": null
+    },
+    {
+      "id": "83fe",
+      "title": "jose",
+      "status": "Pendiente",
+      "resources": [
+        1
+      ],
+      "userId": null
+    }
+  ],
+  "resources": [
+    {
+      "id": 1,
+      "name": "Guía de React"
+    },
+    {
+      "id": 2,
+      "name": "Documentación oficial de React"
+    },
+    {
+      "id": 3,
+      "name": "Aplicación de ejercicios"
+    },
+    {
+      "id": 4,
+      "name": "Lista de compras"
+    },
+    {
+      "id": 5,
+      "name": "Plantilla de emails"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Jose Ochoa",
+      "email": "jose@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": 2,
+      "username": "María Gómez",
+      "email": "maria@example.com",
+      "password": "67890"
+    },
+    {
+      "id": "0e42",
+      "username": "Diego",
+      "email": "diego@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "ac97",
+      "username": "Diego Ochoa",
+      "email": "diego0@gmail.com",
+      "password": "Diego8a"
+    }
+  ]
+}

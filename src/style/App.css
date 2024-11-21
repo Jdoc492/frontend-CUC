@@ -1,0 +1,35 @@
+/* Asegura que el body y html ocupen toda la altura */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  padding-top: 50px;
+  display: flex;
+  background-color: #f9f9f9;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* El contenedor principal de la aplicación */
+#root, .app-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Para que ocupe toda la altura */
+}
+
+/* El contenido principal */
+main {
+  flex: 1;
+  padding: 20px; /* Agrega espacio alrededor del contenido */
+}
+
+/* Footer sticky */
+footer {
+  background-color: #f8f9fa; /* Color de fondo del footer */
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: auto; /* Empuja el footer hacia abajo */
+  width: 100%;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+}

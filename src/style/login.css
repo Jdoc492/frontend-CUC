@@ -1,0 +1,158 @@
+/* Contenedor principal */
+.login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  gap: 10px; /* Espacio entre las columnas */
+  max-height: 1000px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: -70px;
+  }
+  
+  /* Tarjeta del formulario */
+  .login-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Encabezado */
+  .login-header img {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .login-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d32f2f; /* Rojo de la universidad */
+    margin-bottom: 0.5rem;
+  }
+  
+  .login-header p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Formulario */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .login-form label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+  }
+  
+  .login-form input {
+    padding: 0.75rem;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    border-color: #d32f2f;
+    box-shadow: 0 0 5px rgba(211, 47, 47, 0.5);
+  }
+  
+  /* Botón de inicio de sesión */
+  .btn-login {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 0.75rem;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-login:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* Pie de página */
+  .login-footer {
+    margin-top: 1.5rem;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .login-footer a {
+    color: #d32f2f;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Imagen */
+  .login-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .login-container {
+      grid-template-columns: 1fr; /* Una sola columna en pantallas medianas */
+      height: auto; /* Ajustar la altura */
+    }
+  
+    .login-image {
+      display: block; /* Mostrar imagen */
+      margin: 20px auto; /* Centrar en pantallas medianas */
+    }
+  
+    .login-image img {
+      width: 80%; /* Reducir el tamaño en pantallas medianas */
+    }
+  
+    .login-card {
+      max-width: 90%;
+      margin: 20px auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .login-container {
+      grid-template-columns: 1fr; /* Cambia a una columna */
+      gap: 0;
+    }
+  
+    .login-image {
+      display: none; /* Oculta la imagen en pantallas pequeñas */
+    }
+  
+    .login-card {
+      max-width: 90%; /* Hace el formulario más ancho en dispositivos pequeños */
+    }
+  }
+  
